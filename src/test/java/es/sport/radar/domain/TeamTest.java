@@ -1,12 +1,11 @@
-package es.sport.radar;
+package es.sport.radar.domain;
 
-import es.sport.radar.domain.Team;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-class TestTeam {
+class TeamTest {
 
     private static Team team;
 
@@ -22,7 +21,7 @@ class TestTeam {
 
     @Test
     void testGetName() {
-        assertThat(team.getName()).isEqualToIgnoringCase("ECUADOR");
+        assertThat(team.getName()).isEqualToIgnoringCase("ECUADORrr");
     }
 
     @Test

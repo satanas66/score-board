@@ -26,5 +26,4 @@ public class Team {
     public String toString() {
         return this.name + " " + this.score;
     }
-
 }
