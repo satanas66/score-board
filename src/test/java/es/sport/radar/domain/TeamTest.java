@@ -21,7 +21,7 @@ class TeamTest {
 
     @Test
     void testGetName() {
-        assertThat(team.getName()).isEqualToIgnoringCase("ECUADORrr");
+        assertThat(team.getName()).isEqualToIgnoringCase("ECUADOR");
     }
 
     @Test
