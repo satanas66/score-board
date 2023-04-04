@@ -84,12 +84,13 @@ datos y servir las respuestas solicitadas en el documento de requisitos.
 * Para identificar un juego se usarán las 4 primeras letras del nombre de cada equipo unidas por un guion bajo.
 * Para finalizar o actualizar un juego se necesita del identificador del juego, este identificador se podrá recuperar
   del mapa initialScoreBoard.
-* Cuando se finalice un juego este desaparecerá del mapa initialScoreBoard pero se generará una copia en un mapa final
-  que se usará para consultar el resumen de juegos.
+* Cuando se finalice un juego este desaparecerá del mapa initialScoreBoard pero se generará una copia en un mapa
+  finalScoreBoard que se usará para consultar el resumen de juegos.
 * Como no queda claro en el documento qué pasa cuando finaliza un juego. ¿Se puede modificar un juego una vez
   finalizado?. En esta implementación no se actualizan juegos finalizados.
 
 ### Author
+
 * *****Edwin Patricio Arévalo Angulo*****
 * *edwinarevaloangulo@gmail.com*
  
