@@ -21,6 +21,10 @@ public class ScoreBoardImpl implements ScoreBoard {
         return initialScoreBoard;
     }
 
+    public Map<String, Game> getFinalScoreBoard() {
+        return finalScoreBoard;
+    }
+
     @Override
     public void startGame(String teamName1, String teamName2) {
         if (evaluateString(teamName1) && evaluateString(teamName2)) {
@@ -43,7 +47,17 @@ public class ScoreBoardImpl implements ScoreBoard {
 
     @Override
     public void updateScore(String idGame, Integer homeTeamScore, Integer awayTeamScore) {
+        if (evaluateString(idGame) &&
+                Objects.nonNull(homeTeamScore) && homeTeamScore >= 0 &&
+                Objects.nonNull(awayTeamScore) && awayTeamScore >= 0) {
 
+            if (Objects.nonNull(this.finalScoreBoard.get(idGame))) {
+                update(idGame, homeTeamScore, awayTeamScore, this.finalScoreBoard);
+            }
+            if (Objects.nonNull(this.initialScoreBoard.get(idGame))) {
+                update(idGame, homeTeamScore, awayTeamScore, this.initialScoreBoard);
+            }
+        }
     }
 
     @Override
@@ -53,5 +67,13 @@ public class ScoreBoardImpl implements ScoreBoard {
 
     private boolean evaluateString(String value) {
         return (StringUtils.isNotBlank(value) && StringUtils.isNotEmpty(value));
+    }
+
+    private void update(String idGame, int homeTeamScore, int awayTeamScore, Map<String, Game> mapScoreBoard) {
+        mapScoreBoard.get(idGame).getHomeTeam().setScore(homeTeamScore);
+        mapScoreBoard.get(idGame).getAwayTeam().setScore(awayTeamScore);
+        if (homeTeamScore == awayTeamScore) {
+            mapScoreBoard.get(idGame).setTie(true);
+        }
     }
 }
