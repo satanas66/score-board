@@ -62,7 +62,15 @@ public class ScoreBoardImpl implements ScoreBoard {
 
     @Override
     public List<String> summaryGames() {
-        return null;
+        List<String> result = new ArrayList<>();
+        this.finalScoreBoard.values().forEach(g -> {
+            if (g.isTie()) {
+                result.add(0, g.toStringSummary());
+            } else {
+                result.add(g.toStringSummary());
+            }
+        });
+        return result;
     }
 
     private boolean evaluateString(String value) {
