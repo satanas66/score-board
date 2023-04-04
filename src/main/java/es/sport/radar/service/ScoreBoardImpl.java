@@ -6,6 +6,9 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
+/**
+ * @author EDWIN PATRICIO ARÉVALO ANGULO
+ */
 public class ScoreBoardImpl implements ScoreBoard {
 
     private Map<String, Game> initialScoreBoard;

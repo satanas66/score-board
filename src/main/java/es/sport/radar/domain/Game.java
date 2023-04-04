@@ -1,5 +1,8 @@
 package es.sport.radar.domain;
 
+/**
+ * @author EDWIN PATRICIO ARÉVALO ANGULO
+ */
 public class Game {
 
     private String idGame;
