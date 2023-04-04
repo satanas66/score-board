@@ -68,6 +68,7 @@ datos y servir las respuestas solicitadas en el documento de requisitos.
 * Uso la metodología de diseño software Test Driven Development **TDD** siguiendo los pasos **RED-GREEN-REFACTOR**.
 * Uso la herramienta de cobertura de pruebas **jacoco**.
 * Antes de subir el código al uso la herramienta SonarLint.
+* Cada clase tiene su respectiva clase de test.
 
 #### 2. Generación de librería
 
