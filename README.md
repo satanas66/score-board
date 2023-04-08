@@ -77,9 +77,7 @@ datos y servir las respuestas solicitadas en el documento de requisitos.
 #### 3. Notas
 
 * Creo que todas las funciones deberían devolver una lista para saber qué está sucediendo en cada momento.
-* Para solventar el inconveniente del punto 1 proporciono un mapa (initialScoreBoard) que se irá modificando mientras se
-  van añadiendo juegos o actualizando puntuaciones y de esta forma los usuarios podrán consultar el estado de los juegos
-  en cada momento.
+* Para solventar el inconveniente del punto 1 proporciono un mapa (initialScoreBoard) que se irá modificando tanto al añadir, eliminar o actualizar los juegos y de esta forma los usuarios podrán consultar su estado en cada momento.
 * En la implementación que proporciono no se admiten juegos repetidos.
 * Para identificar un juego se usarán las 4 primeras letras del nombre de cada equipo unidas por un guion bajo.
 * Para finalizar o actualizar un juego se necesita del identificador del juego, este identificador se podrá recuperar
