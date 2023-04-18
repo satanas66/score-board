@@ -85,7 +85,7 @@ datos y servir las respuestas solicitadas en el documento de requisitos.
 * Cuando se finalice un juego este desaparecerá del mapa initialScoreBoard pero se generará una copia en un mapa
   finalScoreBoard que se usará para consultar el resumen de juegos.
 * Como no queda claro en el documento qué pasa cuando finaliza un juego. ¿Se puede modificar un juego una vez
-  finalizado?. En esta implementación no se actualizan juegos finalizados.
+  finalizado?. En esta implementación sí se actualizan juegos finalizados.
 
 ### Author
 
